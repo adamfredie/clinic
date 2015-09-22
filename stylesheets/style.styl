@@ -1,0 +1,74 @@
+@import 'normalize'
+@import 'jeet'
+@import '_vars'
+@import 'normalize'
+
+
+body
+	font-family lato
+	background body-colour
+	color white
+	
+.container
+	position relative
+	float left
+	text-align center	
+	width 40%
+	padding-bottom 20%
+
+
+.front, .back
+	position absolute
+	margin 3rem
+	padding 4rem 2rem
+	top 50%
+	left 57%
+	width 100%
+	// transform translate(-50%, -50%)
+	-webkit-backface-visibility hidden
+	-webkit-transition 1s all
+	&:hover
+		box-shadow 1px 12px 30px -4px #000
+		background box-colour
+	
+	@media screen and (max-width: 700px) 
+		position absolute
+		margin 3rem
+		padding 4rem 2rem
+		top 50%
+		left 45%
+		width 100%
+		// transform translate(-50%, -50%)
+		-webkit-backface-visibility hidden
+		transition transform 1s
+		box-shadow 1px 12px 30px -4px #000
+	
+.front
+	background body-colour
+	
+	
+.back
+	background body-colour
+	transform rotateY(-180deg)
+	
+
+// .container:hover .front
+// 	transform rotateY(-180deg)
+	
+// .container:hover .back
+// 	transform rotateY(0)
+	
+.alpha
+	text-align left
+	font-size 2.4rem
+
+	@media screen and (max-width: 700px)
+		font-size 2rem 
+	
+.doctor-title
+	font-size 1.5rem
+	
+	@media screen and (max-width: 700px)
+		font-size 1.2rem
+	
+
