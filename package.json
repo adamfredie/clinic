@@ -1,7 +1,7 @@
 {
   "name": "clinic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clinic Code-base",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +10,19 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-stylus": "^2.1.0"
+    "gulp-stylus": "^2.1.0",
+    "stylus": "^0.52.4"
   },
   "dependencies": {
-    "gulp": "^3.9.0"
-  }
+    "gulp": "^3.9.0",
+    "stylus": "^0.52.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamfredie/clinic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamfredie/clinic/issues"
+  },
+  "homepage": "https://github.com/adamfredie/clinic#readme"
 }
