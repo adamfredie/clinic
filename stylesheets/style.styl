@@ -1,18 +1,18 @@
 @import 'normalize'
 @import 'jeet'
 @import '_vars'
-@import 'normalize'
+@import 'rupture'
 
 
 body
 	font-family lato
 	background body-colour
 	color white
-	
+
 .container
 	position relative
 	float left
-	text-align center	
+	text-align center
 	width 40%
 	padding-bottom 20%
 
@@ -30,8 +30,8 @@ body
 	&:hover
 		box-shadow 1px 12px 30px -4px #000
 		background box-colour
-	
-	@media screen and (max-width: 700px) 
+
+	@media screen and (max-width: 700px)
 		position absolute
 		margin 3rem
 		padding 4rem 2rem
@@ -42,33 +42,37 @@ body
 		-webkit-backface-visibility hidden
 		transition transform 1s
 		box-shadow 1px 12px 30px -4px #000
-	
+
 .front
 	background body-colour
-	
-	
+
+
 .back
 	background body-colour
 	transform rotateY(-180deg)
-	
+
 
 // .container:hover .front
 // 	transform rotateY(-180deg)
-	
+
 // .container:hover .back
 // 	transform rotateY(0)
-	
+
 .alpha
 	text-align left
 	font-size 2.4rem
 
 	@media screen and (max-width: 700px)
 		font-size 2rem 
-	
+
 .doctor-title
 	font-size 1.5rem
-	
+
 	@media screen and (max-width: 700px)
 		font-size 1.2rem
-	
 
+.jeet
+	background red
+	height 200px
+	width 200px
+	center(240px)
