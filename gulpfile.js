@@ -3,20 +3,28 @@ var stylus = require('gulp-stylus');
 var jeet = require('jeet');
 var rupture = require('rupture');
 var nib = require('nib');
-
+var browserSync = require('browser-sync').create();
 
 gulp.task('stylus', function () {
-  gulp.src('style/**/*.styl')
+  gulp.src('./stylesheets/style.styl')
                        .pipe(stylus({
                        use:[jeet(),rupture(), nib()]
                        }))
-                       .pipe(gulp.dest('css/'))
+                       .pipe(gulp.dest('./stylesheets/'))
+                       .pipe(browserSync.reload({stream:  true}));
+
 });
 
-gulp.task('watch', function() {
-  gulp.watch('stylus/**/*.styl', ['stylus']);
+gulp.task('wsh', function(){
+
+  browserSync.init({
+      server: "."
+  });
+  gulp.watch('./**/*.styl', ['stylus']);
+  gulp.watch('**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['watch',]);
+
+gulp.task('default', ['wsh', 'connect',]);
 
 

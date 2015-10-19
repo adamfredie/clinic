@@ -5,6 +5,7 @@
 	<title>Dr Mukhtar's Clinic</title>
 	<link rel="stylesheet" href="./stylesheets/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,900' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/menu_toggle.js"></script>
 </head>
 <body>
 <!-- website header -->
@@ -13,8 +14,13 @@
 			<div class="logo-container">
 				Logo
 			</div>
-			<nav class="navigation">
-				<ul class="nav-list">
+			<nav class="navigation" role="navigation">
+				<div class="ham" onclick="toggle_visibility('nav-list');">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<ul class="nav-list" id="nav-list">
 					<li class="nav-list-child">
 					 <a href="http://www.drmukhtar.com">Home</a>
 					</li>

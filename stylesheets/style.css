@@ -236,7 +236,7 @@ li {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 38.2%;
+  width: 44.586000000000006%;
   margin-left: 0%;
   margin-right: 3%;
   float: right;
@@ -265,6 +265,31 @@ li {
 }
 .nav-list-child {
   display: inline;
+}
+.ham {
+  display: none;
+  float: right;
+  margin: 2.5rem 4rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  height: 45px;
+  position: relative;
+  width: 40px;
+  background: #333;
+}
+.ham:hover {
+  background: #111;
+}
+.ham div {
+  background-color: #999;
+  border-radius: 2px 2px 2px 2px;
+  height: 4px;
+  margin: 0.5rem 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-container {
   background: #fff;
@@ -319,4 +344,22 @@ li {
 .footer-contact-list {
   padding: 2%;
   color: #fff;
+}
+.footer-contact-list-child a {
+  color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .nav-list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+  }
+  .ham {
+    display: block;
+  }
+  .nav-list-child {
+    width: 20%;
+  }
 }
