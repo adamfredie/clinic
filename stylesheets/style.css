@@ -351,19 +351,18 @@ li {
 @media screen and (max-width: 800px) {
   .nav-list {
     display: none;
-    width: 100%;
+    width: 84%;
     position: absolute;
     margin-top: 0;
     padding: 0;
-    top: 7.2rem;
-    left: 0;
+    top: 7rem;
+    right: 4rem;
   }
   .nav-list-mobile {
     display: block;
   }
   .nav-list-child {
     width: 24.41111%;
-    display: inline-block;
   }
   .nav-list-child > a {
     display: block;
