@@ -16,57 +16,82 @@ h1, h2, h3, h4 ,h5, h6
 body
 	font-family lato
 	background white
-	color black
+	color #fff
+	-webkit-font-smoothing antialiased
 
 ul,li
 	list-style none
 	margin 0
 
 .header-top
-	background red
-	height 200px
-	padding-top 2px
+	min-height 100px
+	padding-top 3%
+	margin-bottom 2%
+	margin-right auto
+	margin-left auto
+
+.logo-nav-wrap
+	center(1000px)
 
 .navigation
-	height 160px
-	background blue
-	col(1/2)
+	background #fff
+	col(1/2.5)
 	float right
+	// padding-top 3%
+
+.nav-list
+	margin-top 3%
+
+.nav-list-child > a
+	text-decoration none
+	background button-colour
+	padding 10px
+	border-bottom 4px solid button-shadow
+	color #fff
+	border-radius 2px
 
 .nav-list-child
-	display inline
+	display inline  // gives space automatically
+	// float left doesn't give space
 
 .logo-container
-	background green
-	height 160px
+	background #fff
 	col(1/3)
+	text-align center
 
 .feature-container
 	background body-colour
 	height 500px
 
 .map-container
-	background rebeccapurple
+	background secondary-colour
+	overflow hidden
+	text-align center
+	padding 2%
+
+.map-wrap
+	min-width 300px
+
+.map-wrap-address
+	font-size 1.5rem
+
+
+.map
+	width 100%
+	padding 2%
 	height 400px
+	overflow hidden
 
 .footer-container
-	background #22272a
-	height 40px
-	color white
+	background brown
 
-.social-list-child
-	display inline
+.footer-container-social
+	text-align center
 
-.social-container
-	col(1/2)
+.footer-contact-list
+	padding 2%
+	color #fff
 
-.address
-	col(1/4)
-	float right
-
-.social-icon > svg
-	height 40px
-	width 40px
 
 // // .front, .back
 // // 	position absolute
@@ -83,20 +108,6 @@ ul,li
 // // 		background box-colour
 
 // // 	@media screen and (max-width: 700px)
-// // 		position absolute
-// // 		margin 3rem
-// // 		padding 4rem 2rem
-// // 		top 50%
-// // 		left 45%
-// // 		width 100%
-// // 		// transform translate(-50%, -50%)
-// // 		-webkit-backface-visibility hidden
-// // 		transition transform 1s
-// // 		box-shadow 1px 12px 30px -4px #000
-
-// // .front
-// // 	background body-colour
-
 
 // // .back
 // // 	background body-colour
