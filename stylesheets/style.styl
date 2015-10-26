@@ -1,8 +1,7 @@
 @import 'normalize'
-@import 'jeet'
 @import '_vars'
+@import 'jeet'
 @import 'rupture'
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -53,6 +52,28 @@ ul,li
 .nav-list-child
 	display inline  // gives space automatically
 	// float left doesn't give space
+.nav-list-mobile 
+	display none
+	float right
+	margin 2.6rem 4rem
+	cursor pointer
+	border 1px solid #d0d0d0
+	border-radius 3px 3px 3px 3px
+	cursor pointer
+	height 45px
+	position relative
+	width 40px
+	background #ddd
+	&:hover
+		background #ccc
+	div
+		background-color #999
+		border-radius 2px 2px 2px 2px
+		height 4px
+		margin 0.5rem 0
+		width 70%
+		margin-left auto
+		margin-right auto
 
 .logo-container
 	background #fff
@@ -91,8 +112,32 @@ ul,li
 .footer-contact-list
 	padding 2%
 	color #fff
+.footer-contact-list-child
+	a
+		color #fff
+@media screen and (max-width:800px)
+	.nav-list
+		display none
+		width 84%
+		position absolute
+		margin-top 0
+		padding 0
+		top 7rem
+		right 4rem
+	.nav-list-mobile
+		display block
+	.nav-list-child
+		width 24.41111%
+	.nav-list-child > a
+		display block
+		width 100%
 
 
+@media screen and (max-width:480px)
+	.nav-list-mobile
+		margin 2.6rem 2rem
+	.nav-list
+		right 2rem
 // // .front, .back
 // // 	position absolute
 // // 	margin 3rem
